@@ -7,8 +7,12 @@ export type User = {
 
 export type UserContextType = {
   user: User | null;
+  //   isConnected: boolean;
+  //   login: () => void;
 };
 
 export const UserContext = createContext<UserContextType>({
   user: null,
+  //   isConnected: false,
+  //   login: () => {},
 });

@@ -11,7 +11,7 @@ const ItemList = ({ cheeses }: { cheeses: Cheeses }) => {
     <div>
       <h1>Fromages</h1>
       {cheeses.map((cheese) => (
-        <Item cheese={cheese} />
+        <Item cheese={cheese} key={cheese.name} />
       ))}
     </div>
   );
