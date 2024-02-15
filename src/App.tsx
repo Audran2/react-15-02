@@ -40,10 +40,10 @@ function App() {
       <UserContextProvider>
         <div>
           <Header />
-          <ItemScreen cheeses={cheeses} />
+          <ItemScreen />
         </div>
       </UserContextProvider>
-      <Footer />
+      <Footer onClick={() => setIsSelected(true)} />
     </CheeseContext.Provider>
   );
 }

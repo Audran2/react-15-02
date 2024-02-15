@@ -1,12 +1,10 @@
+import { useContext } from "react";
 import Item from "./Item";
+import { CheeseContext } from "../CheeseContext";
 
-type Cheeses = {
-  name: string;
-  photo: string;
-  isAdmin?: boolean;
-}[];
+const ItemList = () => {
+  const { cheeses } = useContext(CheeseContext);
 
-const ItemList = ({ cheeses }: { cheeses: Cheeses }) => {
   return (
     <div>
       <h1>Fromages</h1>

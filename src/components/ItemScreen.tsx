@@ -1,15 +1,9 @@
 import ItemList from "./ItemList";
 
-type Cheese = {
-  name: string;
-  photo: string;
-  isAdmin?: boolean;
-};
-
-const ItemScreen = ({ cheeses }: { cheeses: Cheese[] }) => {
+const ItemScreen = () => {
   return (
     <div>
-      <ItemList cheeses={cheeses} />
+      <ItemList />
     </div>
   );
 };
