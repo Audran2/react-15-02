@@ -16,7 +16,7 @@ const Item = ({ cheese }: { cheese: Cheese }) => {
     return (
       <div
         style={{
-          border: isSelected ? "1px solid red" : "1px solid white",
+          border: "1px solid white",
           minHeight: "10rem",
           marginBottom: "2rem",
           display: "flex",
