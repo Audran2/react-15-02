@@ -1,4 +1,10 @@
-const Item = (cheese) => {
+type Cheese = {
+  name: string;
+  photo: string;
+  isAdmin?: boolean;
+};
+
+const Item = ({ cheese }: { cheese: Cheese }) => {
   return (
     <div>
       <img src={cheese.photo} alt={cheese.name} />

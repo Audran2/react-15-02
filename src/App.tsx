@@ -6,24 +6,24 @@ const cheeses = [
   {
     name: "bleu",
     photo:
-      "https://www.fromagerie-alexandre.com/wp-content/uploads/2016/08/Bleu-dAuvergne-fromage-de-vache-fromagerie-alexandre-halles-de-Pau.jpeg",
+      "https://parolesdefromagers.com/wp-content/uploads/2023/08/pate-persillee.png",
   },
   {
     name: "camembert",
     photo:
-      "https://www.fromagerie-alexandre.com/wp-content/uploads/2016/08/Bleu-dAuvergne-fromage-de-vache-fromagerie-alexandre-halles-de-Pau.jpeg",
+      "https://parolesdefromagers.com/wp-content/uploads/2023/08/pate-persillee.png",
     isAdmin: true,
   },
   {
     name: "gouda",
     photo:
-      "https://www.fromagerie-alexandre.com/wp-content/uploads/2016/08/Bleu-dAuvergne-fromage-de-vache-fromagerie-alexandre-halles-de-Pau.jpeg",
+      "https://parolesdefromagers.com/wp-content/uploads/2023/08/pate-persillee.png",
     isAdmin: true,
   },
   {
     name: "emmental",
     photo:
-      "https://www.fromagerie-alexandre.com/wp-content/uploads/2016/08/Bleu-dAuvergne-fromage-de-vache-fromagerie-alexandre-halles-de-Pau.jpeg",
+      "https://parolesdefromagers.com/wp-content/uploads/2023/08/pate-persillee.png",
   },
 ];
 
