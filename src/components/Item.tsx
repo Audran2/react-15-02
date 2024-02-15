@@ -17,6 +17,9 @@ const Item = ({ cheese }: { cheese: Cheese }) => {
           border: "1px solid white",
           minHeight: "10rem",
           marginBottom: "2rem",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         You're not admin
