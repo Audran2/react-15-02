@@ -1,5 +1,6 @@
+import { useState } from "react";
 import "./App.css";
-import { UserContext } from "./UserContext";
+import { User, UserContext } from "./UserContext";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ItemScreen from "./components/ItemScreen";
@@ -29,14 +30,26 @@ const cheeses = [
   },
 ];
 
-const value = {
-  user: {
-    name: "Raymond",
-    isAdmin: false,
-  },
-};
+// const value = {
+//   user: null,
+//   // {
+//   //   name: "Raymond",
+//   //   isAdmin: false,
+//   // },
+// };
 
 function App() {
+  const [user, setUser] = useState<User | null>(null);
+
+  const login = () => {
+    setUser({
+      name: "Raymond",
+      isAdmin: true,
+    });
+  };
+
+  const value = { user, login };
+
   return (
     <>
       <UserContext.Provider value={value}>
