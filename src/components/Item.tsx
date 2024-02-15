@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { UserContext } from "../UserContext";
+import { CheeseContext } from "../CheeseContext";
 
 type Cheese = {
   name: string;
@@ -8,13 +9,14 @@ type Cheese = {
 };
 
 const Item = ({ cheese }: { cheese: Cheese }) => {
+  const { isSelected } = useContext(CheeseContext);
   const { user } = useContext(UserContext);
 
   if (cheese.isAdmin === true && user?.isAdmin !== true) {
     return (
       <div
         style={{
-          border: "1px solid white",
+          border: isSelected ? "1px solid red" : "1px solid white",
           minHeight: "10rem",
           marginBottom: "2rem",
           display: "flex",
@@ -30,7 +32,7 @@ const Item = ({ cheese }: { cheese: Cheese }) => {
   return (
     <div
       style={{
-        border: "1px solid white",
+        border: isSelected ? "1px solid red" : "1px solid white",
         minHeight: "10rem",
         marginBottom: "2rem",
       }}

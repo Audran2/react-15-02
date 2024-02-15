@@ -1,4 +1,6 @@
+import { useState } from "react";
 import "./App.css";
+import { CheeseContext } from "./CheeseContext";
 import { UserContextProvider } from "./UserContext";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -30,8 +32,11 @@ const cheeses = [
 ];
 
 function App() {
+  const [isSelected, setIsSelected] = useState(false);
+  const value = { cheeses, isSelected };
+
   return (
-    <>
+    <CheeseContext.Provider value={value}>
       <UserContextProvider>
         <div>
           <Header />
@@ -39,7 +44,7 @@ function App() {
         </div>
       </UserContextProvider>
       <Footer />
-    </>
+    </CheeseContext.Provider>
   );
 }
 
