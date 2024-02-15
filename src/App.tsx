@@ -1,5 +1,6 @@
 import "./App.css";
 import { UserContext } from "./UserContext";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ItemScreen from "./components/ItemScreen";
 
@@ -37,12 +38,15 @@ const value = {
 
 function App() {
   return (
-    <UserContext.Provider value={value}>
-      <div>
-        <Header />
-        <ItemScreen cheeses={cheeses} />
-      </div>
-    </UserContext.Provider>
+    <>
+      <UserContext.Provider value={value}>
+        <div>
+          <Header />
+          <ItemScreen cheeses={cheeses} />
+        </div>
+      </UserContext.Provider>
+      <Footer />
+    </>
   );
 }
 
