@@ -1,4 +1,5 @@
 import "./App.css";
+import { UserContext } from "./UserContext";
 import Header from "./components/Header";
 import ItemScreen from "./components/ItemScreen";
 
@@ -27,14 +28,21 @@ const cheeses = [
   },
 ];
 
+const value = {
+  user: {
+    name: "Raymond",
+    isAdmin: false,
+  },
+};
+
 function App() {
   return (
-    <>
+    <UserContext.Provider value={value}>
       <div>
         <Header />
         <ItemScreen cheeses={cheeses} />
       </div>
-    </>
+    </UserContext.Provider>
   );
 }
 

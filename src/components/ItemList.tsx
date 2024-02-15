@@ -9,7 +9,7 @@ type Cheeses = {
 const ItemList = ({ cheeses }: { cheeses: Cheeses }) => {
   return (
     <div>
-      <h1>test</h1>
+      <h1>Fromages</h1>
       {cheeses.map((cheese) => (
         <Item cheese={cheese} />
       ))}
